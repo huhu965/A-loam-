@@ -63,9 +63,9 @@
 
 #define DISTORTION 0
 
-//cornerPointsLessSharp里面这个less代表的是tm更多，好憨批的命名啊，为了加快匹配速度
-//cornerPointsSharp里面放了平滑度最大的2个点，而带less的放了平滑度最大的20个点
-//cornerPointsLessSharp是包含cornerPointsSharp的，蛋疼啊
+//cornerPointsLessSharp 没那么尖锐的角点，所以包含的更多
+//cornerPointsSharp 里面放了平滑度最大的2个点，而带lesssharp放了平滑度最大的20个点
+//cornerPointsLessSharp 是包含cornerPointsSharp的
 
 int corner_correspondence = 0, plane_correspondence = 0;
 
